@@ -1,0 +1,9 @@
+keys to add in custom recovery to /res/keys
+
+created with https://android.googlesource.com/platform/bootable/recovery/+/master/tools/dumpkey/DumpPublicKey.java
+java -cp /usr/share/java/bcprov.jar:path-to-DumpPublicKey-root-dir com.android.dumpkey.DumpPublicKey lineageos.pem
+cert can be extracted from rom: /etc/security/otacerts.zip or also from signed zip
+
+please check against https://wiki.lineageos.org/verifying-builds.html or https://github.com/lineageos/lineage_wiki/blob/master/pages/meta/verifying_builds.md
+
+please cross-check the fingerprint: openssl x509 -in lineageos.pem -noout -fingerprint
