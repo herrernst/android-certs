@@ -7,3 +7,5 @@ cert can be extracted from rom: /etc/security/otacerts.zip or also from signed z
 please check against https://wiki.lineageos.org/verifying-builds.html or https://github.com/lineageos/lineage_wiki/blob/master/pages/meta/verifying_builds.md
 
 please cross-check the fingerprint: openssl x509 -in lineageos.pem -noout -fingerprint
+
+verify rom zip: keytool -list -printcert -jarfile rom-or-update.zip
